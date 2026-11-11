@@ -3,12 +3,12 @@ import os
 import time
 
 
-path_save = '../OccludedPASCAL3D/'
-source_anno_path = path_save + 'annotations_grouped'
-save_anno_path = path_save + 'annotations'
+path_save = '/data/dataset/pascal_voc/VOCdevkit/VOC2010/'
+source_anno_path = path_save + 'Annotations_grouped_Ocln'
+save_anno_path = path_save + 'Annotations_Ocln'
 
-categories = ['aeroplane', 'bicycle', 'bus', 'car', 'motorbike', 'train', 'boat', 'bottle', 'chair', 'diningtable',
-              'sofa', 'tvmonitor']
+categories = ["car", "person", "bottle", "bird", "cow", "bicycle"]
+
 
 # folder_name_list = ['%sFGL0_BGL0'] + ['%sFGL%d_BGL%d' % ('%s', j, i) for i in range(1, 4) for j in range(1, 4)]
 folder_name_list = ['%sFGL%d_BGL%d' % ('%s', j, i) for i in range(1, 4) for j in range(1, 4)]
